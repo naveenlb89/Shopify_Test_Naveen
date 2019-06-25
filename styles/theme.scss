@@ -1,23 +1,22 @@
 @charset "UTF-8";
 
 // Vendor
-@import "vendor/bemskel/main";
 @import "vendor/bulma/bulma";
+@import "vendor/bootstrap4grid/grid";
 
 // Global
 @import "variables";
-@import "tools/functions";
-@import "tools/mixins";
-@import "tools/grid";
-
-// Core
-@import "core/typography";
-@import "core/footer";
-@import "core/navigation";
 
 // Components
 @import "components/banner";
 @import "components/button";
 @import "components/icon";
 
+// Core
+@import "core/typography";
+@import "core/footer";
+@import "core/navigation";
+
 // Pages
+@import "pages/global";
+@import "pages/index";
