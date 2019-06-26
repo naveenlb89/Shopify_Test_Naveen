@@ -1,10 +1,10 @@
 // Fonts
 @import url("https://fonts.googleapis.com/css?family=Archivo");
-@import url("https://fonts.googleapis.com/css?family=PT+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css?family=PT+Sans&display=swap");
 
 $archivo: archivo;
 $butler: butler;
-$ptSerif: "PT Serif", serif;
+$ptSans: "PT Sans", sans-serif;
 
 // Colors
 $white: #ffffff;
@@ -70,6 +70,7 @@ $alert-success-text: #ffffff !default;
 
 // Font sizes
 $base16-14px: 0.875em !default;
+$font-nano: 0.75em;
 
 // Font Line Height
 $font-line-height-reduce: 0.8;

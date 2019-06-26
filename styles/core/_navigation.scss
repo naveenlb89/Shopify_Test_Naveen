@@ -1,9 +1,75 @@
+// Header Promo
+.header__promo {
+  height: 36px;
+  background-color: $black;
+  color: $white;
+}
+
+// Font-Size Set for header promo bar
+$min_width: 320px;
+$max_width: 920px;
+$min_font: 10px;
+$max_font: 16px;
+
+.header__promo--text {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+}
+
 .navbar-link,
 .navbar-item {
-  font-weight: $weight-bold;
+  font-weight: $weight-semibold;
   color: $black;
 }
 
 .navbar-burger {
-  margin-left: 0;
+  width: auto;
+  height: auto;
+}
+
+.navbar-menu {
+  @include media-breakpoint-up(lg) {
+    flex-grow: 1;
+    flex-shrink: 0;
+    display: flex;
+    align-items: stretch;
+  }
+  .navbar-menu__submenu {
+    @include media-breakpoint-up(lg) {
+      align-items: stretch;
+      display: flex;
+      justify-content: flex-start;
+    }
+  }
+}
+
+.navbar-item.has-dropdown {
+  @include media-breakpoint-up(lg) {
+    align-items: stretch;
+    display: flex;
+  }
+}
+
+.navbar-link {
+  @include media-breakpoint-up(lg) {
+    align-items: center;
+    display: flex;
+    &:not(.is-arrowless)::after {
+      content: none;
+    }
+  }
+}
+
+// .navbar-link:not(.is-arrowless):after {
+//   content: none;
+// }
+
+.navbar-dropdown {
+  @include media-breakpoint-up(lg) {
+    display: none;
+  }
+}
+
+// Nav Icons
+[class^="navbar-brand__icons"] {
+  color: $black;
 }

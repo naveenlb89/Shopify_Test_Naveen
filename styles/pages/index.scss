@@ -1,0 +1,35 @@
+.hero-banner {
+  position: relative;
+  text-align: center;
+}
+
+.hero-banner__content {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  @include media-breakpoint-down(md) {
+    left: 50%;
+    top: 24%;
+  }
+  @include media-breakpoint-up(lg) {
+    left: 80%;
+    top: 50%;
+  }
+  @media (max-width: 380px) {
+    top: 34%;
+  }
+}
+
+.hero-banner__content--cta {
+  border: 0;
+  border-radius: 0;
+  background-color: $black;
+  letter-spacing: 0;
+  @include media-breakpoint-down(md) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+.hero-banner__content--text-subheading {
+  font-size: $font-nano;
+}

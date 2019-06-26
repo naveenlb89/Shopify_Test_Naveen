@@ -20,14 +20,34 @@
 </head>
 <body>
   <div class="container px-0">
-  <nav id="navigation" class="navbar" role="navigation" aria-label="main navigation">
-  </nav>
+    <header class="header">
+      <div class="header__promo d-flex align-items-center justify-content-center">
+        <p class="header__promo--text body-type--femto letter-spacing--small">
+          Free Shipping on orders over USD $60 and Worldwide $100
+        </p>
+      </div>
+      <nav id="navigation" class="navbar mx-2 mx-md-4 align-items-center py-3 py-md-4" role="navigation" aria-label="main navigation">
+      </nav>
+    </header>
 
+    <!-- START CODE -->
+    <div class="hero-banner">
+    <picture class="hero-banner__media">
+      <source media="(min-width: 992px)" srcset="/images/homepage/module_1_desk.jpg">
+        <source media="(min-width: 320px)" srcset="/images/homepage/module_1_mob.jpg">
+          <img src="/images/homepage/module_1_desk.jpg" alt="Flowers">
+        </picture>
+        <div class="hero-banner__content text-color--white">
+          <p class="hero-banner__content--text-one heading--3">Drop Dead</p>
+          <p class="hero-banner__content--text-two heading--hero">Gorgeous</p>
+          <p class="hero-banner__content--text-subheading body-type--micro pt-2 pb-lg-3 txt--bold">with the new Matrix Sunnies</p>
+          <p class="hero-banner__content--text-subheading body-type--micro pb-3 txt--bold">Available in 5 different shades</p>
+          <a class="txt--bold btn hero-banner__content--cta px-lg-4 text-color--white body-type--femto" href="#">Shop the Matrix</a>
+        </div>
+      </div>
+        <!-- END CODE -->
 
-  <!-- START CODE -->
-
-  <!-- END CODE -->
-  <footer id="footer"></footer>
-</container>
-</body>
-</html>
+        <footer id="footer"></footer>
+      </container>
+    </body>
+    </html>
