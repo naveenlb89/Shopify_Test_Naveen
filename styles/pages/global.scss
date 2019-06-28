@@ -14,3 +14,20 @@ body {
 .cursor-pointer {
   cursor: pointer;
 }
+
+a {
+  color: $black;
+}
+
+.border-none {
+  border: 0;
+}
+
+.homepage--cta {
+  border: 0;
+  border-radius: 0;
+  background-color: $black;
+  font-weight: 600;
+  color: $white;
+  font-size: 0.625rem;
+}

@@ -59,10 +59,6 @@ $max_font: 16px;
   }
 }
 
-// .navbar-link:not(.is-arrowless):after {
-//   content: none;
-// }
-
 .navbar-dropdown {
   @include media-breakpoint-up(lg) {
     display: none;
